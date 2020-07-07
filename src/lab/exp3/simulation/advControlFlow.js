@@ -169,14 +169,29 @@ window.view = {
 		var inputValue = document.getElementById('simpleLoopInput').value
 		if (selected_loop === 'for' && inputValue !== '' && !isNaN(model.inp) )
 		{
+
+			if(inputValue < 0 || inputValue > 20){
+				alert("Invalid input");
+				return ;
+			}
 			this.displayLoop('forLoopContent', 'codeContentFor1')
 		}
 		if (selected_loop === 'while' && inputValue !== '' && !isNaN(model.inp))
 		{
+
+			if(inputValue < 0 || inputValue > 20){
+				alert("Invalid input");
+				return ;
+			}
 			this.displayLoop('whileLoopContent', 'codeContentWhile1')
 		}
 		if (selected_loop === 'do-while' && inputValue !== '' && !isNaN(model.inp))
 		{
+
+			if(inputValue < 0 || inputValue > 20){
+				alert("Invalid input");
+				return ;
+			}
 		 	this.displayLoop('dowhileLoopContent', 'codeContentDoWhile1')
 		}
 		this.disableButton('btnStart')
