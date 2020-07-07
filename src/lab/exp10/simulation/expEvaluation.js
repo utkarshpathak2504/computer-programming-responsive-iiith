@@ -545,9 +545,13 @@ window.view = {
 	},
 	deFreezeInputs: function () {
 		this.enableElement('a')
+		document.getElementById('a').value=0;
 		this.enableElement('b')
+		document.getElementById('b').value=0;
 		this.enableElement('c')
+		document.getElementById('c').value=0;
 		this.enableElement('d')
+		document.getElementById('d').value=0;
 		document.getElementById('buttonEdit').className += ' hide'
 		document.getElementById('buttonSave').className = 'button saveButton'
 	},
